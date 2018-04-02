@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+    {% for post in posts %}
+    <div>
+        <H1>{{ post.title }}</H1>
+        {{ post.body }}
+    </div>
+    {% endfor %}
+{% endblock %}
